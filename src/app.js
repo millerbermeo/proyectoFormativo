@@ -1,13 +1,4 @@
-// // Initialization for ES Users
-// import {
-//   Datatable,
-//   initTE,
-// } from "tw-elements";
-
-// initTE({ Datatable });
-
-
-
+// Function definition
 function menuLateral(event) {
   let barra_lateral = document.querySelector('#barra-lateral');
 
@@ -22,16 +13,17 @@ function menuLateral(event) {
 }
 
 // Add the click event listener to #menu-hamburguesa
-document.querySelector('#menu-hamburguesa').addEventListener("click", menuLateral);
+let mm = document.querySelector('#menu-hamburguesa');
+mm.addEventListener("click", menuLateral);
 
 const abrirModalBtn = document.getElementById("abrirModal");
 const cerrarModalBtn = document.getElementById("cerrarModal");
 const miModal = document.getElementById("miModal");
 
 abrirModalBtn.addEventListener("click", () => {
-    miModal.classList.remove("hidden");
+  miModal.classList.remove("hidden");
 });
 
 cerrarModalBtn.addEventListener("click", () => {
-    miModal.classList.add("hidden");
+  miModal.classList.add("hidden");
 });
