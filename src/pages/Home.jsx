@@ -1,5 +1,4 @@
 import React from "react";
-import Api from "../components/Api";
 import Sidebar from "../components/Sidebar";
 import Navbar from "../components/Navbar";
 
